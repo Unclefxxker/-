@@ -1,5 +1,6 @@
 #利用pyautogui模块中的locateOnScreen找出图片在屏幕中的位置，但是locateOnScreen只是简单的颜色对比，所以不同的梯队回归只能抓取左上角的后勤支援获得
 #点击后勤支援获得之后会弹出对话框是否继续后勤，这时候找出确定键在屏幕中的位置再点击就可以继续后勤了
+#这个脚本比较耗费内存，执行一次循环内存暴涨700m左右
 
 import pyautogui as pag #引入pyautogui
 import time #引入time
@@ -19,4 +20,4 @@ while True: #无限循环
         mouseclick(后勤1.png) #点击后勤支援获得所在位置
         mouseclick(后勤确定.png) #点击后勤确定所在位置
     else:
-        time.sleep(10) #暂停10秒
+        time.sleep(10) #查找图片之间间隔10秒
