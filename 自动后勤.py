@@ -15,8 +15,8 @@ def mouseclick(pic): #定义鼠标点击函数，pic为图片路径
     time.sleep(1) #暂停1秒
 
 while True: #无限循环
-    if pag.locateOnScreen(后勤支援获得.png) != None: #如果能在屏幕中找到后勤支援获得图片的位置
-        mouseclick(后勤支援获得.png) #点击后勤支援获得所在位置
+    if pag.locateOnScreen(后勤1.png) != None: #如果能在屏幕中找到后勤支援获得图片的位置
+        mouseclick(后勤1.png) #点击后勤支援获得所在位置
         mouseclick(后勤确定.png) #点击后勤确定所在位置
     else:
         time.sleep(10) #暂停10秒
